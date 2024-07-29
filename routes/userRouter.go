@@ -9,5 +9,5 @@ func UserRoutes(incomingRoutes *fiber.App) {
 	incomingRoutes.Get("/users", controller.GetUsers)
 	incomingRoutes.Get("/users/:user_id", controller.GetUser)
 	incomingRoutes.Post("/users/signup", controller.SignUp)
-	incomingRoutes.Get("/users/login", controller.Login)
+	incomingRoutes.Post("/users/login", controller.Login)
 }

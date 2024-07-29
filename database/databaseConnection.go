@@ -11,7 +11,7 @@ import (
 )
 
 func DBinstance() *mongo.Client {
-	MongoDb := "mongo://localhost:27017"
+	MongoDb := "mongodb://localhost:27017"
 	fmt.Print(MongoDb)
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
